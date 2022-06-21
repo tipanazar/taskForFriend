@@ -1,0 +1,108 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font), sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+svg {
+  display: block;
+}
+
+h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include mq(tablet) {
+    max-width: 768px;
+  }
+
+  @include mq(desktop) {
+    max-width: 1200px;
+  }
+}
+
+.flex-container {
+  display: flex;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+  @include mq(desktop) {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+}
+
+.a-tag,
+.a-tag-header,
+.projects__link {
+  color: var(--black-color);
+  text-decoration: none;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.a-tag-header:hover .envelope,
+.a-tag-header:hover .smartphone,
+.a-tag:hover,
+.a-tag-header:hover,
+.a-tag-header:focus .envelope,
+.a-tag-header:focus .smartphone,
+.a-tag:focus,
+.a-tag-header:focus {
+  color: var(--hover-color);
+  fill: var(--hover-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+  
+  .what-we-do-img:last-child,
+  .team-member-block:last-child,
+  .button-li:last-child,
+  .contact,
+  .icon-list:last-child,
+  .our-client:last-child,
+  .footer-icon:last-child {
+    margin-right: 0;
+}
+  .current-btn {
+    background-color: var(--hover-color);
+    color: var(--white-color);
+  }

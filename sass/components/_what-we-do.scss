@@ -1,0 +1,41 @@
+.what-we-do-sect {
+    padding-top: 0;
+    display: none;
+
+    @include mq(desktop) {
+      display: block;
+    }
+  }
+  
+  .what-we-do {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  
+  .what-we-do-img {
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .what-we-do-img > .what-we-do-soaring {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--backgrd-what-we-do-soaring);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 27px 0;
+    width: 370px;
+  }

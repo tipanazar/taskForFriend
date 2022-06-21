@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/modern-normalize.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<header class="header header-flex-container">
+  <div class="container header-flex-container">
+    <a class="logo a-tag" href="./index.html">
+      Web<span class="logo-black">Studio</span>
+    </a>
+
+    <nav class="nav-header">
+      <ul class="menu flex-container">
+        <li class="studio">
+          <a class="a-tag-header" href="./index.html">Студия</a>
+        </li>
+        <li class="portfolio">
+          <a class="a-tag-header current-page" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="contact">
+          <a class="a-tag-header" href="/contact">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="contacts">
+      <li class="header-email">
+        <a class="header-email-link" href="mailto:info@devstudio.com">
+          <svg class="envelope" width="16px" height="12px">
+            <use href="./images/sprite/icons.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+      </li>
+
+      <li class="header-tel">
+        <a class="header-tel-link" href="tel:+380961111111">
+          <svg class="smartphone" width="10px" height="16px">
+            <use href="./images/sprite/icons.svg#icon-smartphone"></use>
+          </svg>
+          +38 096 111 11 11
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- open menu button -->
+  <button class="menu-button" type="button" data-menu-button>
+    <svg class="menu-svg" width="40px" height="40px">
+      <use class="open-menu-btn" href="./images/sprite/icons.svg#open-menu"></use>
+      <use class="close-menu-btn" href="./images/sprite/icons.svg#close-button"></use>
+    </svg>
+  </button>
+
+  <!-- header menu -->
+  <div class="header-menu" data-menu>
+    <nav>
+      <ul class="menu-pages-list">
+        <li class="menu-page">
+          <a class="a-tag" href="./index.html">Студия</a>
+        </li>
+        <li class="menu-page">
+          <a class="a-tag current-page-menu" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="menu-page">
+          <a class="a-tag" href="https://www.instagram.com/_murad.nagiev_/">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="menu-lists">
+    <ul class="menu-contacts">
+      <li class="menu-phone">
+         <a class="a-tag menu-phone-link" href="tel:+380961111111">+38 096 111 11 11</a> 
+      </li>
+      <li class="menu-email">
+        <a class="a-tag menu-email-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+
+   <ul class="menu-soc-links-list">
+      <li class="soc-link-item">
+        <a class="a-tag soc-link soc-link--decor" href="https://www.instagram.com/_murad.nagiev_/">Instagram</a>
+      </li>
+      <li class="soc-link-item">
+        <a class="a-tag soc-link soc-link--decor" href="#">Twitter</a>
+      </li>
+      <li class="soc-link-item">
+        <a class="a-tag soc-link soc-link--decor" href="#">Facebook</a>
+      </li>
+      <li class="soc-link-item">
+        <a class="a-tag soc-link" href="#">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</header>
+
+<!-- main content section -->
+<main>
+  <section class="menu section">
+    <div class="menu__button-block container">
+      <h2 hidden>Портфолио</h2>
+       <ul class="button-block__list">
+        <li class="list-item">
+          <button class="list-item__button button current-btn" type="button">Все</button>
+        </li>
+        <li class="list-item">
+          <button class="list-item__button button" type="button">
+            Веб-сайты
+          </button>
+        </li>
+        <li class="list-item">
+          <button class="list-item__button button" type="button">
+            Приложения
+          </button>
+        </li>
+        <li class="list-item">
+          <button class="list-item__button button" type="button">Дизайн</button>
+        </li>
+        <li class="list-item">
+          <button class="list-item__button button" type="button">
+            Маркетинг
+          </button>
+        </li>
+      </ul>
+      <!-- img list -->
+      <ul class="projects flex-container-wrap flex-container">
+        <li class="projects__proj-list">
+          <a class="proj-list__proj-link" href="#">
+            <div class="proj-link__proj-hover-block">
+              <picture>
+
+                <source
+                media="(min-width: 1280px)"
+                srcset="
+                ./images/portfolio/img_lg.jpg 1x,
+                ./images/portfolio/img@2x_lg.jpg 2x
+                ">
+
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./images/portfolio/img_md.jpg 1x,
+                ./images/portfolio/img@2x_md.jpg 2x
+                ">
+
+                <img srcset="
+                ./images/portfolio/img_sm.jpg 1x,
+                ./images/portfolio/img@2x_sm.jpg 2x
+                "
+                src="./images/portfolio/img_sm.jpg" 
+                alt="Логотип проекта" />
+              </picture>
+              <p class="proj-hover-block__proj-hover-text">
+                Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
+                цифрового шпионажа и атак на защищённые сервера конкурентов.
+              </p>
+            </div>
+            <div class="projects__text-block">
+              <h3 class="projects__name">Технокряк</h3>
+              <p class="projects__description">Веб-сайт</p>
+            </div>
+          </a>
+        </li>
+        <li class="projects__proj-list">
+          <a class="proj-list__proj-link" href="#">
+            <div class="proj-link__proj-hover-block">
+              <picture>
+
+                <source
+                media="(min-width: 1280px)"
+                srcset="
+                ./images/portfolio/img-1_lg.jpg 1x,
+                ./images/portfolio/img@2x-1_lg.jpg 2x
+                ">
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./images/portfolio/img-1_md.jpg 1x,
+                ./images/portfolio/img@2x-1_md.jpg 2x
+                ">
+
+                <img srcset="
+                ./images/portfolio/img-1_sm.jpg 1x,
+                ./images/portfolio/img@2x-1_sm.jpg 2x
+                "
+                src="./images/portfolio/img-1_sm.jpg" 
+                alt="Логотип проекта" />
+              </picture>
+              <p class="proj-hover-block__proj-hover-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, libero porro! Animi, totam accusamus.
+                Rerum voluptate corrupti neque nostrum tempora vero alias provident excepturi. Sunt aspernatur veritatis
+                minus reiciendis quaerat.
+
+              </p>
+            </div>
+            <div class="projects__text-block">
+              <h3 class="projects__name">Постер New Orlean vs Golden Star</h3>
+              <p class="projects__description">Дизайн</p>
+            </div>
+          </a>
+        </li>
+        <li class="projects__proj-list">
+          <a class="proj-list__proj-link" href="#">
+            <div class="proj-link__proj-hover-block">
+              <picture>
+
+                <source
+                media="(min-width: 1280px)"
+                srcset="
+                ./images/portfolio/img-2_lg.jpg 1x,
+                ./images/portfolio/img@2x-2_lg.jpg 2x
+                ">
+                
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./images/portfolio/img-2_md.jpg 1x,
+                ./images/portfolio/img@2x-2_md.jpg 2x
+                ">
+
+                <img srcset="
+                ./images/portfolio/img-2_sm.jpg 1x,
+                ./images/portfolio/img@2x-2_sm.jpg 2x
+                "
+                src="./images/portfolio/img-2_sm.jpg" 
+                alt="Логотип проекта" />
+              </picture>
+              <p class="proj-hover-block__proj-hover-text">
+                Коронное блюдо - суп с летучей мыши.
+              </p>
+            </div>
+            <div class="projects__text-block">
+              <h3 class="projects__name">Ресторан Seafood</h3>
+              <p class="projects__description">Приложение</p>
+            </div>
+          </a>
+        </li>
+        <li class="projects__proj-list">
+          <a class="proj-list__proj-link" href="#">
+            <div class="proj-link__proj-hover-block">
+              <picture>
+                <source
+                media="(min-width: 1280px)"
+                srcset="
+                ./images/portfolio/img-3_lg.jpg 1x,
+                ./images/portfolio/img@2x-3_lg.jpg 2x
+                ">
+                
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./images/portfolio/img-3_md.jpg 1x,
+                ./images/portfolio/img@2x-3_md.jpg 2x
+                ">
+
+                <img srcset="
+                ./images/portfolio/img-3_sm.jpg 1x,
+                ./images/portfolio/img@2x-3_sm.jpg 2x
+                "
+                src="./images/portfolio/img-3_sm.jpg" 
+                alt="Логотип проекта" />
+              </picture>
+              <p class="proj-hover-block__proj-hover-text">
+                dipisicing elit. Placeat, libero porro! Animi, totam accusamus. Rerum voluptate corrupti neque nostrum
+                tempora vero alias provident excepturi. Sunt aspernatur veritatis minus reiciendis quaerat.
+              </p>
+            </div>
+            <div class="projects__text-block">
+              <h3 class="projects__name">Проект Prime</h3>
+              <p class="projects__description">Маркетинг</p>
+            </div>
+          </a>
+        </li>
+        <li class="projects__proj-list">
+          <a class="proj-list__proj-link" href="#">
+            <div class="proj-link__proj-hover-block">
+              <picture>
+                <source
+                media="(min-width: 1280px)"
+                srcset="
+                ./images/portfolio/img-4_lg.jpg 1x,
+                ./images/portfolio/img@2x-4_lg.jpg 2x
+                ">
+                
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./images/portfolio/img-4_md.jpg 1x,
+                ./images/portfolio/img@2x-4_md.jpg 2x
+                ">
+
+                <img srcset="
+                ./images/portfolio/img-4_sm.jpg 1x,
+                ./images/portfolio/img@2x-4_sm.jpg 2x
+                "
+                src="./images/portfolio/img-4_sm.jpg" 
+                alt="Логотип проекта" />
+              </picture>
+              <p class="proj-hover-block__proj-hover-text">
+                Lorem ipsum dolorrupti neque nostrum tempora vero alias provident excepturi. Sunt aspernatur veritatis
+                minus reiciendis quaerat.
+              </p>
+            </div>
+            <div class="projects__text-block">
+              <h3 class="projects__name">Проект Boxes</h3>
+              <p class="projects__description">Приложение</p>
+            </div>
+          </a>
+        </li>
+        <li class="projects__proj-list">
+          <a class="proj-list__proj-link" href="#">
+            <div class="proj-link__proj-hover-block">
+              <picture>
+                <source
+                media="(min-width: 1280px)"
+                srcset="
+                ./images/portfolio/img-5_lg.jpg 1x,
+                ./images/portfolio/img@2x-5_lg.jpg 2x
+                ">
+                
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./images/portfolio/img-5_md.jpg 1x,
+                ./images/portfolio/img@2x-5_md.jpg 2x
+                ">
+
+                <img srcset="
+                ./images/portfolio/img-5_sm.jpg 1x,
+                ./images/portfolio/img@2x-5_sm.jpg 2x
+                "
+                src="./images/portfolio/img-5_sm.jpg" 
+                alt="Логотип проекта" />
+              </picture>
+              <p class="proj-hover-block__proj-hover-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, libero porro porro porro porro porro
+                porro porro porro porro porro porro porro porro porro! Reiciendis quaerat.
+              </p>
+            </div>
+            <div class="projects__text-block">
+              <h3 class="projects__name">Inspiration has no Borders</h3>
+              <p class="projects__description">Веб-сайт</p>
+            </div>
+          </a>
+        </li>
+        <li class="projects__proj-list">
+          <a class="proj-list__proj-link" href="#">
+            <div class="proj-link__proj-hover-block">
+              <picture>
+                <source
+                media="(min-width: 1280px)"
+                srcset="
+                ./images/portfolio/img-6_lg.jpg 1x,
+                ./images/portfolio/img@2x-6_lg.jpg 2x
+                ">
+                
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./images/portfolio/img-6_md.jpg 1x,
+                ./images/portfolio/img@2x-6_md.jpg 2x
+                ">
+
+                <img srcset="
+                ./images/portfolio/img-6_sm.jpg 1x,
+                ./images/portfolio/img@2x-6_sm.jpg 2x
+                "
+                src="./images/portfolio/img-6_sm.jpg" 
+                alt="Логотип проекта" />
+              </picture>
+              <p class="proj-hover-block__proj-hover-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, libero porro! Animi, totam rnatur
+                veritatis minus reiciendis quaerat.
+              </p>
+            </div>
+            <div class="projects__text-block">
+              <h3 class="projects__name">Издание Limited Edition</h3>
+              <p class="projects__description">Дизайн</p>
+            </div>
+          </a>
+        </li>
+        <li class="projects__proj-list">
+          <a class="proj-list__proj-link" href="#">
+            <div class="proj-link__proj-hover-block">
+              <picture>
+                <source
+                media="(min-width: 1280px)"
+                srcset="
+                ./images/portfolio/img-7_lg.jpg 1x,
+                ./images/portfolio/img@2x-7_lg.jpg 2x
+                ">
+                
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./images/portfolio/img-7_md.jpg 1x,
+                ./images/portfolio/img@2x-7_md.jpg 2x
+                ">
+
+                <img srcset="
+                ./images/portfolio/img-7_sm.jpg 1x,
+                ./images/portfolio/img@2x-7_sm.jpg 2x
+                "
+                src="./images/portfolio/img-7_sm.jpg" 
+                alt="Логотип проекта" />
+              </picture>
+              <p class="proj-hover-block__proj-hover-text">
+                Lorem ipsum dolor sit amet consectetur, adipis totam accusamus. Rerum voluptate corrupti neque nostrum
+                tempora vero alias provident excepturi. Sunt aspernatur veritatis minus reiciendis quaerat.
+              </p>
+            </div>
+            <div class="projects__text-block">
+              <h3 class="projects__name">Проект LAB</h3>
+              <p class="projects__description">Маркетинг</p>
+            </div>
+          </a>
+        </li>
+        <li class="projects__proj-list">
+          <a class="proj-list__proj-link" href="#">
+            <div class="proj-link__proj-hover-block">
+              <picture>
+                <source
+                media="(min-width: 1280px)"
+                srcset="
+                ./images/portfolio/img-8_lg.jpg 1x,
+                ./images/portfolio/img@2x-8_lg.jpg 2x
+                ">
+                
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./images/portfolio/img-8_md.jpg 1x,
+                ./images/portfolio/img@2x-8_md.jpg 2x
+                ">
+
+                <img srcset="
+                ./images/portfolio/img-8_sm.jpg 1x,
+                ./images/portfolio/img@2x-8_sm.jpg 2x
+                "
+                src="./images/portfolio/img-8_sm.jpg" 
+                alt="Логотип проекта" />
+              </picture>
+              <p class="proj-hover-block__proj-hover-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, libero porro! Animi, totam accusamus.
+                eiciendis quaerat.
+              </p>
+            </div>
+            <div class="projects__text-block">
+              <h3 class="projects__name">Growing Business</h3>
+              <p class="projects__description">Приложение</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- footer content section -->
+ <footer class="footer">
+  <div class="container footer-flex">
+    <div class="footer-flex-wrap">
+      <a class="footer-logo a-tag" href="./index.html">
+        Web<span class="logo-white">Studio</span>
+      </a>
+      <address class="address">
+        <a class="map a-tag" href="https://goo.gl/maps/2pE7odXQLVDn4BUs5">
+          г. Киев, пр-т Леси Украинки, 26
+        </a>
+        <a class="footer-email a-tag" href="mailto:info@devstudio.com">
+          info@devstudio.com
+        </a>
+        <a class="footer-tel a-tag" href="tel:+380961111111">
+          +38 096 111 11 11
+        </a>
+      </address>
+    </div>
+    <div class="footer-links">
+      <p class="invite-footer">Присоеденяйтесь</p>
+      <ul class="footer-links-list">
+        <li class="footer-icon">
+          <a class="white-icon-link" href="https://www.instagram.com/_murad.nagiev_/">
+            <svg class="footer-instagram" width="20px" height="20px">
+              <use href="./images/sprite/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a class="white-icon-link" href="#">
+            <svg class="footer-twitter" width="20px" height="20px">
+              <use href="./images/sprite/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a class="white-icon-link" href="#">
+            <svg class="footer-facebook" width="20px" height="20px">
+              <use href="./images/sprite/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a class="white-icon-link" href="#">
+            <svg class="footer-linkedin" width="20px" height="20px">
+              <use href="./images/sprite/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-spam-block">
+      <p class="footer-spam-invite">Подпишитесь на рассылку</p>
+      <form class="spam-form-footer">
+        <input class="spam-field" type="email" name="email" placeholder="Email" />
+        <button class="submit-button-footer" type="submit">
+          Подписаться
+          <svg class="icon-send" width="24px" height="24px">
+            <use href="./images/sprite/icons.svg#icon-send"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</footer>
+    </div>
+  </div>
+</footer>
+<script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
